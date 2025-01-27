@@ -3,7 +3,7 @@ import pandas as pd
 
 def realizar_merge(df1, df_cuestionario):
     # Realizar el merge entre los dos DataFrames
-    df_merged_cuestionario = pd.merge(df1, df_cuestionario, on='Codigo', how='inner')
+    df_merged_cuestionario = pd.merge(df_cuestionario, df1, on='Codigo', how='inner')
     return df_merged_cuestionario
 
 # Título de la aplicación
